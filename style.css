@@ -1,0 +1,92 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    background-color: azure;
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.library {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    margin: 30px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 10px 5px 5px lightblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+form > button {
+    width: 225px;
+}
+
+form > input {
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid darkblue;
+    width: 200px;
+    height: 10px;
+    padding: 5px 12px;
+    transition-duration: 0.4s;
+}
+
+.card > p {
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.card > .read-card::before {
+    content: "Read: ";
+}
+
+.card > .pages-card::before {
+    content: "Pages: ";
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 7px 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+input:hover {
+    background-color: rgb(200, 250, 250);
+}
